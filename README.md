@@ -1,16 +1,57 @@
-# React + Vite
+# react-simple-modal
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
 
-Currently, two official plugins are available:
+react-simple-modal is a simple and reusable React modal component.
+It allows you to display custom content inside a modal without using jQuery.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This component was created as part of a learning project to replace a jQuery modal with a React solution.
 
-## React Compiler
+## Installation
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+Install the plugin directly from GitHub:
 
-## Expanding the ESLint configuration
+npm install github:Neihos/react-simple-modal
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Usage
+
+Example of a basic modal usage in a React component:
+
+import { useState } from "react";
+import { Modal } from "react-simple-modal";
+
+function Example() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  return (
+    <>
+      <button onClick={() => setIsOpen(true)}>Open modal</button>
+
+      <Modal
+        isOpen={isOpen}
+        onClose={() => setIsOpen(false)}
+        title="Success"
+      >
+        <p>The modal content is passed using children.</p>
+      </Modal>
+    </>
+  );
+}
+
+export default Example;
+
+| Prop name  | Type              | Description                             |
+| ---------- | ----------------- | --------------------------------------- |
+| `isOpen`   | boolean           | Controls whether the modal is displayed |
+| `onClose`  | function          | Function called to close the modal      |
+| `title`    | string (optional) | Modal title                             |
+| `children` | ReactNode         | Content displayed inside the modal      |
+
+
+## Notes
+
+The modal is controlled by the parent component.
+
+Clicking on the overlay or on the close button closes the modal.
+
+The component is UI-only and contains no business logic.
