@@ -1,5 +1,19 @@
 import "./assets/modal.css";
 
+/**
+ * Modal component
+ *
+ * A reusable UI-only React modal component.
+ * This component replaces the original jQuery modal.
+ *
+ * Props:
+ * @param {boolean} isOpen - Controls whether the modal is displayed.
+ * @param {function} onClose - Function called to close the modal.
+ * @param {string} title - Optional modal title.
+ * @param {ReactNode} children - Content displayed inside the modal.
+ * @param {boolean} closeOnOverlayClick - If true, clicking the overlay closes the modal.
+ */
+
 export default function Modal({
   isOpen,
   onClose,
