@@ -4,7 +4,6 @@ import "./assets/modal.css";
  * Modal component
  *
  * A reusable UI-only React modal component.
- * This component replaces the original jQuery modal.
  *
  * Props:
  * @param {boolean} isOpen - Controls whether the modal is displayed.
