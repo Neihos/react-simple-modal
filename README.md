@@ -7,6 +7,12 @@ It allows you to display custom content inside a modal without using jQuery.
 
 This component was created as part of a learning project to replace a jQuery modal with a React solution.
 
+## Prerequisites
+
+- Node.js v18 or higher
+- React v18 or higher
+- A React project (Vite, CRA or similar)
+
 ## Installation
 
 Install the plugin directly from GitHub:
@@ -46,7 +52,6 @@ export default Example;
 | `onClose`  | function          | Function called to close the modal      |
 | `title`    | string (optional) | Modal title                             |
 | `children` | ReactNode         | Content displayed inside the modal      |
-
 
 ## Notes
 
