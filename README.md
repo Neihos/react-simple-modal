@@ -17,7 +17,7 @@ This component was created as part of a learning project to replace a jQuery mod
 
 Install the plugin directly from GitHub:
 
-npm install github:Neihos/react-simple-modal
+npm install @neihos/react-simple-modal
 
 ## Usage
 
