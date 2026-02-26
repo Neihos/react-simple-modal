@@ -1,6 +1,6 @@
 {
   "name": "@neihos/react-simple-modal",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A simple and reusable React modal component to replace a jQuery modal.",
   "author": "Neihos",
   "license": "MIT",
@@ -9,7 +9,13 @@
   "exports": {
     ".": "./src/index.js"
   },
-  "keywords": ["react", "modal", "ui", "component", "popup"],
+  "keywords": [
+    "react",
+    "modal",
+    "ui",
+    "component",
+    "popup"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "vite build",
